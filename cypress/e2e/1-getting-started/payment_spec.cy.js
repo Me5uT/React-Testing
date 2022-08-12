@@ -10,6 +10,8 @@ describe("payment", () => {
     // https://www.youtube.com/watch?v=OVNjsIto9xM&t=2260s min 40:06
 
     // check balance
+    let oldBalance = 0;
+    cy.get('[data-test="sidenav-user-balance"]').should((a) => console.log("a", a));
     // click on pay button
     // search for user
     // add amount and note and click pay button
